@@ -1,0 +1,31 @@
+{
+  "name": "thoughtsideas/ti-subtitle",
+  "type": "wordpress-plugin",
+  "license": "GPLv2 or later",
+  "version": "0.1.0",
+  "description": "Adds a subtitle meta box to posts and pages.",
+  "homepage": "https://github.com/thoughtsideas/ti-subtitle/",
+  "authors": [
+    {
+      "name": "Michael Bragg",
+      "homepage": "http://www.michaelbragg.net",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "composer",
+    "wp"
+  ],
+  "minimum-stability": "dev",
+  "require-dev": {
+    "phpmd/phpmd" : "@stable",
+    "sebastian/phpcpd": "*",
+    "squizlabs/php_codesniffer": "*",
+    "simplyadmire/composer-plugins" : "@dev",
+    "wp-coding-standards/wpcs": "*",
+    "dealerdirect/phpcodesniffer-composer-installer" : "*",
+    "frenck/php-compatibility": "*"
+  },
+  "require": {}
+}

@@ -1,0 +1,12 @@
+# TI Subtitle
+
+## System
+
+error_log
+.DS_Store
+
+## Development
+
+bin
+vendor/*
+composer.lock

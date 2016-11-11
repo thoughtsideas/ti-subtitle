@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# Quality Assurance tests
+
+# Install coding standards
+echo "Installing coding standards..."
+./vendor/bin/phpcs --config-set installed_paths "$(pwd)/vendor/wp-coding-standards/wpcs/,$(pwd)/vendor/frenck/php-compatibility"
+./vendor/bin/phpcs --config-set colors 1
+./vendor/bin/phpcs --config-set show_progress 1
+
+# Check out code
+echo "Running coding standards..."
+./vendor/bin/phpcs --standard="WordPress" ./ --extensions="php" --ignore="vendor"
+
+echo "Running mess detector..."
+./vendor/bin/phpmd ./ text ./tests/phpmd.ruleset.xml --suffixes php --exclude vendor
+
+echo "Running PHP compatibility check..."
+./vendor/bin/phpcs --standard="PHPCompatibility" --exclude="PHPCompatibility.PHP.DefaultTimeZoneRequired" --runtime-set testVersion 5.3-7.0 ./ --extensions="php" --ignore="vendor"

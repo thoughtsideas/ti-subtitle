@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Setup the vagrant environment
+
+# Setup PHP
+echo "Setup PHP..."
+phpenv local 5.5
+
+# Install PHP dependancies
+php -n /home/rof/bin/composer config -g github-oauth.github.com $GITHUB_ACCESS
+php -n /home/rof/bin/composer install --no-interaction  --prefer-dist
