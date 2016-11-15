@@ -10,3 +10,8 @@ error_log
 bin
 vendor/*
 composer.lock
+
+## NodeJS
+
+node_modules/
+npm-debug.log

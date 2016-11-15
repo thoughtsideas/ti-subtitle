@@ -1,0 +1,27 @@
+{
+  "name": "ti-subtitle",
+  "version": "0.1.0",
+  "description": "",
+  "license": "",
+  "main": "",
+  "repository": "thoughtsideas/ti-subtitle",
+  "author": {
+    "name": "Michael Bragg",
+    "email": "michael@michaelbragg.net",
+    "url": "https://www.thoughtsideas.uk"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {},
+  "files": [],
+  "keywords": [],
+  "dependencies": {
+    "del": "^2.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.x",
+    "gulp-sort": "^2.0.x",
+    "gulp-wp-pot": "^1.3.x"
+  }
+}

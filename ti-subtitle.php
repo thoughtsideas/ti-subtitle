@@ -107,6 +107,12 @@ function ti_subtitle_init() {
 		$ti_subtitle = new TI_Subtitle();
 	}
 
+	load_plugin_textdomain(
+		'ti-subtitle',
+		false,
+		dirname( plugin_basename( __FILE__ ) ) . '/languages/'
+	);
+
 	return $ti_subtitle;
 
 }
