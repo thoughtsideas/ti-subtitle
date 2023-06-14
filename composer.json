@@ -27,5 +27,6 @@
     "dealerdirect/phpcodesniffer-composer-installer" : "*",
     "frenck/php-compatibility": "*"
   },
-  "require": {}
+  "require": {},
+  "abandoned": true
 }
